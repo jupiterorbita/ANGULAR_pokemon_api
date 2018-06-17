@@ -1,3 +1,4 @@
+import { PokemonService } from './pokemon.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'POKEMON';
+  constructor(private _pokemonService: PokemonService) {
+
+  }
 }
